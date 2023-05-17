@@ -5,8 +5,18 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://gym-app-4y5d.onrender.com/",
+        target: "https://gym-app-frontend.onrender.com/",
+        changeOrigin: true,
       },
+    },
+  },
+
+  build: {
+    // generate manifest.json in outDir
+    manifest: true,
+    rollupOptions: {
+      // overwrite default .html entry
+      input: '/src/main.jsx',
     },
   },
   plugins: [react()],
