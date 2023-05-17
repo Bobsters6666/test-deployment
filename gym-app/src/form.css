@@ -1,0 +1,54 @@
+.signup-form {
+    width: 500px;
+    padding: 30px;
+}
+
+.signup-form button {
+    margin-top: 10px;
+}
+
+.signup-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.signup-button-div {
+    text-align: center;
+    padding: 10px 0
+}
+
+.signup-button-div button {
+    background-color: #0b5ed7;
+    padding: 10px 25px;
+    font-weight: 600;
+    border-radius: 15px;
+    transition: ease-in-out 0.15s;
+}
+
+.signup-button-div button:hover {
+    background-color: #2c2c2c;
+}
+
+.signup-button-div button:active {
+    opacity: 0.6;
+}
+
+.signup-title {
+    font-weight: 600;
+    font-size: 35px;
+}
+
+/* Dashboard styling */
+.dashboard-container{
+    margin-top: 100px;
+    display: grid;
+    place-items: center;
+}
+
+.dashboard {
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3)
+}
