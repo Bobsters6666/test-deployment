@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import '../leaderboard.css';
 import OnerepmaxDetails from './OnerepmaxDetails';
 
-export default function Test() {
+export default function Leaderboard() {
   const [onerepmaxes, setOnerepmaxes] = useState(null);
 
   // Fetches data from backend
   useEffect(() => {
     const fetchOnerepmaxes = async () => {
-      const response = await fetch('/api');
+      const response = await fetch('https://gym-app-4y5d.onrender.com/api');
       const json = await response.json();
 
       if (response.ok) {

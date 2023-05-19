@@ -19,6 +19,8 @@ export default function dashboard() {
 		}
 	}
 
+	console.log(currentUser)
+
 	return (
 		<div className="dashboard-container">
 			<Card className="dashboard">
@@ -27,7 +29,8 @@ export default function dashboard() {
           {error && <Alert variant="danger">{error}</Alert>}
 					<strong>Username: </strong> {currentUser.displayName || 'Anonymous'}<br />
 					<strong>Email: </strong> {currentUser?.email || ''} <br />
-					<strong>One rep max: </strong> {currentUser.max || 0.0+"kg"}
+					<strong>One rep max: </strong> {currentUser.displayName || 0.0+"kg"}
+					
 					<Link to="/update-profile" className="btn btn-primary w-100 mt-3">Update Profile</Link>
 				</Card.Body>
 			</Card>
